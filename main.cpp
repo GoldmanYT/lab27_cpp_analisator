@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
         getline(cin, temp);
         if (temp != "y")
         {
-            //return 0;
+            return 0;
         }
     }
     output_file_exists.close();
@@ -72,6 +72,7 @@ int main(int argc, char *argv[])
         {
             cout << "[in]:  " << line << endl;
             cout << "[out]: " << line2 << endl;
+            cout << endl;
         }
         current_line_count += 2;
         if (current_line_count >= lines_at_once)
